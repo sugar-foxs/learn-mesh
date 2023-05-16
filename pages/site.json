@@ -248,136 +248,126 @@
           },
           {
             "label": "面试",
-            "children": [
-              {
-                "label": "面试",
-                "url": "interview",
-                "schema": {
-                  "type": "page",
-                  "data": {
-                    "items": [
-                      {
-                        "title": "javaGuide",
-                        "desc": "面试必备复习网站",
-                        "imageUrl": "javaGuide.jpg",
-                        "url": "https://snailclimb.gitee.io/javaguide/#/?id=java",
-                        "tpl": "复习"
-                      },
-                      {
-                        "title": "Java 工程师成神之路",
-                        "desc": "面试必备复习网站",
-                        "imageUrl": "hollis.jpg",
-                        "url": "https://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650123276&idx=1&sn=5800cc1e60f64591ae4030e2e5e6b61c&chksm=f36bb12dc41c383b4254083be91c38f867113a980774c93c5078b037aa0bafa32df4bca5de74&mpshare=1&scene=24&srcid=030509x8Tiomv2wRlqzruwYn&pass_ticket=VqLz8RZP%2FH3Zdh3GuInXtB0jFVUBDb0yK6lN30ooIXVa0xVDbS%2BWS6xv1AttNr75#rd",
-                        "tpl": "复习"
-                      },
-                      {
-                        "title": "leetcode",
-                        "desc": "必备刷题网站",
-                        "imageUrl": "leetcode.jpg",
-                        "url": "https://leetcode.cn/",
-                        "tpl": "刷题"
-                      },
-                      {
-                        "title": "牛客网",
-                        "desc": "必备刷题网站",
-                        "imageUrl": "nowcoder.jpg",
-                        "url": "https://www.nowcoder.com/",
-                        "tpl": "刷题"
-                      }
-                    ]
+            "url": "interview",
+            "schema": {
+              "type": "page",
+              "data": {
+                "items": [
+                  {
+                    "title": "javaGuide",
+                    "desc": "面试必备复习网站",
+                    "imageUrl": "javaGuide.jpg",
+                    "url": "https://snailclimb.gitee.io/javaguide/#/?id=java",
+                    "tpl": "复习"
                   },
-                  "body": {
-                    "type": "table",
-                    "source": "$items",
-                    "columns": [
+                  {
+                    "title": "Java 工程师成神之路",
+                    "desc": "面试必备复习网站",
+                    "imageUrl": "hollis.jpg",
+                    "url": "https://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650123276&idx=1&sn=5800cc1e60f64591ae4030e2e5e6b61c&chksm=f36bb12dc41c383b4254083be91c38f867113a980774c93c5078b037aa0bafa32df4bca5de74&mpshare=1&scene=24&srcid=030509x8Tiomv2wRlqzruwYn&pass_ticket=VqLz8RZP%2FH3Zdh3GuInXtB0jFVUBDb0yK6lN30ooIXVa0xVDbS%2BWS6xv1AttNr75#rd",
+                    "tpl": "复习"
+                  },
+                  {
+                    "title": "leetcode",
+                    "desc": "必备刷题网站",
+                    "imageUrl": "leetcode.jpg",
+                    "url": "https://leetcode.cn/",
+                    "tpl": "刷题"
+                  },
+                  {
+                    "title": "牛客网",
+                    "desc": "必备刷题网站",
+                    "imageUrl": "nowcoder.jpg",
+                    "url": "https://www.nowcoder.com/",
+                    "tpl": "刷题"
+                  }
+                ]
+              },
+              "body": {
+                "type": "table",
+                "source": "$items",
+                "columns": [
+                  {
+                    "type": "card",
+                    "header": {
+                      "title": "${title}--${desc}"
+                    },
+                    "body": {
+                      "type": "image",
+                      "src": "../public/${imageUrl}",
+                      "position": "left",
+                      "thumbMode": "cover",
+                      "enlargeAble": true,
+                      "innerClassName": "no-border"
+                    },
+                    "actions": [
                       {
-                        "type": "card",
-                        "header": {
-                          "title": "${title}--${desc}"
-                        },
-                        "body": {
-                          "type": "image",
-                          "src": "../public/${imageUrl}",
-                          "position": "left",
-                          "thumbMode": "cover",
-                          "enlargeAble": true,
-                          "innerClassName": "no-border"
-                        },
-                        "actions": [
-                          {
-                            "type": "button",
-                            "label": "跳转",
-                            "level": "info",
-                            "actionType": "url",
-                            "url": "${url}"
-                          }
-                        ],
-                        "toolbar": [
-                          {
-                            "type": "tpl",
-                            "tpl": "$tpl",
-                            "className": "label label-warning"
-                          }
-                        ]
+                        "type": "button",
+                        "label": "跳转",
+                        "level": "info",
+                        "actionType": "url",
+                        "url": "${url}"
+                      }
+                    ],
+                    "toolbar": [
+                      {
+                        "type": "tpl",
+                        "tpl": "$tpl",
+                        "className": "label label-warning"
                       }
                     ]
                   }
-                }
+                ]
               }
-            ]
+            }
           },
           {
             "label": "书籍",
-            "children": [
-              {
-                "label": "书籍",
-                "url": "book",
-                "schema": {
-                  "type": "page",
-                  "data": {
-                    "items": [
+            "url": "book",
+            "schema": {
+              "type": "page",
+              "data": {
+                "items": [
 
-                    ]
-                  },
-                  "body": {
-                    "type": "table",
-                    "source": "$items",
-                    "columns": [
+                ]
+              },
+              "body": {
+                "type": "table",
+                "source": "$items",
+                "columns": [
+                  {
+                    "type": "card",
+                    "header": {
+                      "title": "${title}--${desc}"
+                    },
+                    "body": {
+                      "type": "image",
+                      "src": "../public/${imageUrl}",
+                      "position": "left",
+                      "thumbMode": "cover",
+                      "enlargeAble": true,
+                      "innerClassName": "no-border"
+                    },
+                    "actions": [
                       {
-                        "type": "card",
-                        "header": {
-                          "title": "${title}--${desc}"
-                        },
-                        "body": {
-                          "type": "image",
-                          "src": "../public/${imageUrl}",
-                          "position": "left",
-                          "thumbMode": "cover",
-                          "enlargeAble": true,
-                          "innerClassName": "no-border"
-                        },
-                        "actions": [
-                          {
-                            "type": "button",
-                            "label": "跳转",
-                            "level": "info",
-                            "actionType": "url",
-                            "url": "${url}"
-                          }
-                        ],
-                        "toolbar": [
-                          {
-                            "type": "tpl",
-                            "tpl": "$tpl",
-                            "className": "label label-warning"
-                          }
-                        ]
+                        "type": "button",
+                        "label": "跳转",
+                        "level": "info",
+                        "actionType": "url",
+                        "url": "${url}"
+                      }
+                    ],
+                    "toolbar": [
+                      {
+                        "type": "tpl",
+                        "tpl": "$tpl",
+                        "className": "label label-warning"
                       }
                     ]
                   }
-                }
+                ]
               }
-            ]
+            }
           }
         ]
       }
