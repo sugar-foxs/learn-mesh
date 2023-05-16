@@ -1,0 +1,226 @@
+{
+  "status": 0,
+  "msg": "",
+  "data": {
+    "pages": [
+      {
+        "label": "Home",
+        "url": "/",
+        "redirect": "/java"
+      },
+      {
+        "children": [
+          {
+            "label": "开发语言",
+            "children": [
+              {
+                "label": "java",
+                "url": "java",
+                "schema": {
+                  "type": "page",
+                  "data": {
+                    "items": [
+                      {
+                        "title": "spring",
+                        "desc": "spring学习网站",
+                        "imageUrl": "spring.jpg",
+                        "url": "https://spring.io/projects/spring-boot"
+                      },
+                      {
+                        "title": "programCreek",
+                        "desc": "英文学习网站",
+                        "imageUrl": "programCreek.jpg",
+                        "url": "https://www.programcreek.com/"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "table",
+                    "source": "$items",
+                    "columns": [
+                      {
+                        "type": "card",
+                        "header": {
+                          "title": "${title}--${desc}"
+                        },
+                        "body": {
+                          "type": "image",
+                          "src": "../public/${imageUrl}",
+                          "position": "left",
+                          "thumbMode": "cover",
+                          "enlargeAble": true,
+                          "innerClassName": "no-border"
+                        },
+                        "actions": [
+                          {
+                            "type": "button",
+                            "label": "跳转",
+                            "level": "info",
+                            "actionType": "url",
+                            "url": "${url}"
+                          }
+                        ],
+                        "toolbar": [
+                          {
+                            "type": "tpl",
+                            "tpl": "java",
+                            "className": "label label-warning"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "label": "go",
+                "url": "go",
+                "schema": {
+                  "type": "page",
+                  "data": {
+                    "items": [
+                      {
+                        "title": "Go语言圣经（中文版）",
+                        "desc": "《The Go Programming Language》 中文版本",
+                        "imageUrl": "gopl.jpeg",
+                        "url": "https://books.studygolang.com/gopl-zh/"
+                      },
+                      {
+                        "title": "Uber开源的《Go语言编码规范》",
+                        "desc": "go语言编码规范",
+                        "imageUrl": "goCodeRule.jpg",
+                        "url": "https://learnku.com/go/wikis/38426#4ac600"
+                      },
+                      {
+                        "title": "GoCN社区",
+                        "desc": "学习社区",
+                        "imageUrl": "gocn.jpg",
+                        "url": "https://gocn.vip/c/3lQ6GbD5ny/home"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "table",
+                    "source": "$items",
+                    "columns": [
+                      {
+                        "type": "card",
+                        "header": {
+                          "title": "${title}--${desc}"
+                        },
+                        "body": {
+                          "type": "image",
+                          "src": "../public/${imageUrl}",
+                          "position": "left",
+                          "thumbMode": "cover",
+                          "enlargeAble": true,
+                          "innerClassName": "no-border"
+                        },
+                        "actions": [
+                          {
+                            "type": "button",
+                            "label": "跳转",
+                            "level": "info",
+                            "actionType": "url",
+                            "url": "${url}"
+                          }
+                        ],
+                        "toolbar": [
+                          {
+                            "type": "tpl",
+                            "tpl": "go",
+                            "className": "label label-warning"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "面试",
+            "children": [
+              {
+                "label": "面试",
+                "url": "interview",
+                "schema": {
+                  "type": "page",
+                  "data": {
+                    "items": [
+                      {
+                        "title": "javaGuide",
+                        "desc": "面试必备复习网站",
+                        "imageUrl": "javaGuide.jpg",
+                        "url": "https://snailclimb.gitee.io/javaguide/#/?id=java",
+                        "tpl": "复习"
+                      },
+                      {
+                        "title": "Java 工程师成神之路",
+                        "desc": "面试必备复习网站",
+                        "imageUrl": "hollis.jpg",
+                        "url": "https://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650123276&idx=1&sn=5800cc1e60f64591ae4030e2e5e6b61c&chksm=f36bb12dc41c383b4254083be91c38f867113a980774c93c5078b037aa0bafa32df4bca5de74&mpshare=1&scene=24&srcid=030509x8Tiomv2wRlqzruwYn&pass_ticket=VqLz8RZP%2FH3Zdh3GuInXtB0jFVUBDb0yK6lN30ooIXVa0xVDbS%2BWS6xv1AttNr75#rd",
+                        "tpl": "复习"
+                      },
+                      {
+                        "title": "leetcode",
+                        "desc": "必备刷题网站",
+                        "imageUrl": "leetcode.jpg",
+                        "url": "https://leetcode.cn/",
+                        "tpl": "刷题"
+                      },
+                      {
+                        "title": "牛客网",
+                        "desc": "必备刷题网站",
+                        "imageUrl": "nowcoder.jpg",
+                        "url": "https://www.nowcoder.com/",
+                        "tpl": "刷题"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "table",
+                    "source": "$items",
+                    "columns": [
+                      {
+                        "type": "card",
+                        "header": {
+                          "title": "${title}--${desc}"
+                        },
+                        "body": {
+                          "type": "image",
+                          "src": "../public/${imageUrl}",
+                          "position": "left",
+                          "thumbMode": "cover",
+                          "enlargeAble": true,
+                          "innerClassName": "no-border"
+                        },
+                        "actions": [
+                          {
+                            "type": "button",
+                            "label": "跳转",
+                            "level": "info",
+                            "actionType": "url",
+                            "url": "${url}"
+                          }
+                        ],
+                        "toolbar": [
+                          {
+                            "type": "tpl",
+                            "tpl": "$tpl",
+                            "className": "label label-warning"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
