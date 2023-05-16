@@ -218,6 +218,59 @@
                 }
               }
             ]
+          },
+          {
+            "label": "书籍",
+            "children": [
+              {
+                "label": "书籍",
+                "url": "book",
+                "schema": {
+                  "type": "page",
+                  "data": {
+                    "items": [
+
+                    ]
+                  },
+                  "body": {
+                    "type": "table",
+                    "source": "$items",
+                    "columns": [
+                      {
+                        "type": "card",
+                        "header": {
+                          "title": "${title}--${desc}"
+                        },
+                        "body": {
+                          "type": "image",
+                          "src": "../public/${imageUrl}",
+                          "position": "left",
+                          "thumbMode": "cover",
+                          "enlargeAble": true,
+                          "innerClassName": "no-border"
+                        },
+                        "actions": [
+                          {
+                            "type": "button",
+                            "label": "跳转",
+                            "level": "info",
+                            "actionType": "url",
+                            "url": "${url}"
+                          }
+                        ],
+                        "toolbar": [
+                          {
+                            "type": "tpl",
+                            "tpl": "$tpl",
+                            "className": "label label-warning"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
           }
         ]
       }
