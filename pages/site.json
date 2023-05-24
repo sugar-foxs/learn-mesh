@@ -48,6 +48,8 @@
                           "src": "../public/${imageUrl}",
                           "position": "left",
                           "thumbMode": "cover",
+                          "width": "1000px",
+                          "height": "200px",
                           "enlargeAble": true,
                           "innerClassName": "no-border"
                         },
@@ -113,6 +115,8 @@
                           "src": "../public/${imageUrl}",
                           "position": "left",
                           "thumbMode": "cover",
+                          "width": "800px",
+                          "height": "200px",
                           "enlargeAble": true,
                           "innerClassName": "no-border"
                         },
@@ -166,6 +170,8 @@
                           "src": "../public/${imageUrl}",
                           "position": "left",
                           "thumbMode": "cover",
+                          "width": "800px",
+                          "height": "200px",
                           "enlargeAble": true,
                           "innerClassName": "no-border"
                         },
@@ -222,6 +228,63 @@
                       "src": "../public/${imageUrl}",
                       "position": "left",
                       "thumbMode": "cover",
+                      "width": "800px",
+                      "height": "200px",
+                      "enlargeAble": true,
+                      "innerClassName": "no-border"
+                    },
+                    "actions": [
+                      {
+                        "type": "button",
+                        "label": "跳转",
+                        "level": "info",
+                        "actionType": "url",
+                        "url": "${url}"
+                      }
+                    ],
+                    "toolbar": [
+                      {
+                        "type": "tpl",
+                        "tpl": "$tpl",
+                        "className": "label label-warning"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "label": "综合",
+            "url": "all-round",
+            "schema": {
+              "type": "page",
+              "data": {
+                "items": [
+                  {
+                    "title": "菜鸟教程",
+                    "desc": "",
+                    "imageUrl": "runoob.jpg",
+                    "url": "https://www.runoob.com/",
+                    "tpl": "综合"
+                  }
+                ]
+              },
+              "body": {
+                "type": "table",
+                "source": "$items",
+                "columns": [
+                  {
+                    "type": "card",
+                    "header": {
+                      "title": "${title}  ${desc}"
+                    },
+                    "body": {
+                      "type": "image",
+                      "src": "../public/${imageUrl}",
+                      "thumbMode": "cover",
+                      "width": "800px",
+                      "height": "200px",
                       "enlargeAble": true,
                       "innerClassName": "no-border"
                     },
@@ -297,6 +360,8 @@
                       "src": "../public/${imageUrl}",
                       "position": "left",
                       "thumbMode": "cover",
+                      "width": "800px",
+                      "height": "200px",
                       "enlargeAble": true,
                       "innerClassName": "no-border"
                     },
@@ -344,7 +409,9 @@
                       "type": "image",
                       "src": "../public/${imageUrl}",
                       "position": "left",
-                      "thumbMode": "cover",
+                      "thumbMode": "w-full",
+                      "width": "800px",
+                      "height": "200px",
                       "enlargeAble": true,
                       "innerClassName": "no-border"
                     },
