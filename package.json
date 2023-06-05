@@ -1,6 +1,6 @@
 {
   "name": "amis-boilerplate",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "基于 amis 的项目模板",
   "main": "index.js",
   "scripts": {
